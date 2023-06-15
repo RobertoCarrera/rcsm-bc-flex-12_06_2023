@@ -1,0 +1,222 @@
+
+/*******EMPIEZAN********/
+/*  ESTILOS GENERALES  */
+/***********************/
+
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/*******ACABAN********/
+/*  ESTILOS GENERALES  */
+/***********************/
+
+/*******EMPIEZAN********/
+/*CONTAINERES GENERALES*/
+/***********************/
+
+#container{
+  height: 100vh;
+  width: 100vw;
+}
+
+#barra-herramientas{
+  display: flex;
+  height: 5vh;
+}
+
+#contenido{
+  height: 85vh;
+}
+
+#footer{
+  color: gray;
+  height: 10vh;
+  background-color: rgba(190, 190, 190, 0.24);
+}
+
+/********ACABAN*********/
+/*CONTAINERS GENERALES */
+/***********************/
+
+/*******EMPIEZAN********/
+/*ESTILOS HERRAMIENTAS */
+/***********************/
+
+#herramientas-derecha-container{
+  width: 50vw;
+  text-align: right;
+}
+
+#herramientas-derecha-container a{
+  margin: 10px;
+}
+
+#herramientas-derecha{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#herramientas-izquierda-container{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+  }
+  
+
+#herramientas-izquierda-container a{
+  margin: 10px;
+}
+
+
+#herramientas-derecha img{
+  border-radius: 50px;
+}
+
+/*******ACABAN********/
+/*ESTILOS HERRAMIENTAS */
+/***********************/
+
+/*******EMPIEZAN********/
+/*  ESTILOS CONTENIDO  */
+/***********************/
+
+#imagen{
+  text-align: center;
+}
+
+#imagen .material-symbols-outlined{
+  color: skyblue;
+}
+
+#busqueda{
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  max-width: 30%;
+  margin: 20px auto;
+  border-radius: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+#busqueda-izquierda{
+  width: 5%;
+  align-items: center;
+}
+
+#caja-buscar{
+  width: 80%;
+  text-align: center;
+}
+
+#caja-buscar input{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+#busqueda-derecha{
+  width: 15%;
+  text-align: right;
+  align-items: center;
+}
+
+#busqueda span{
+  margin: 8px;
+}
+
+#botones{
+  text-align: center;
+  margin: 20px;
+}
+
+#botones button{
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  background-color: rgba(219, 219, 219, 0.212);
+}
+
+#botones button:hover{
+  box-shadow: 0 0 3px 0 gray;
+}
+
+#idiomas{
+  text-align: center;
+}
+
+#idiomas a{
+  color: rgb(17, 17, 202);
+}
+
+/*********ACABAN********/
+/*  ESTILOS CONTENIDO  */
+/***********************/
+
+/*******EMPIEZAN********/
+/*    ESTILOS FOOTER   */
+/***********************/
+
+#footer a{
+  color: gray;
+  margin: 15px;
+}
+
+#footer p{
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+#pais{
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+#enlaces-footer{
+  display: flex;
+  height: 5vh;
+  align-items: center;
+}
+
+.enlace{
+  width: 33vw;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.enlace a{
+  align-items: center;
+}
+
+.enlace:nth-of-type(2){
+  text-align: center;
+  display: flex;
+}
+
+.enlace:nth-of-type(2) .material-symbols-outlined{
+  color: green;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.enlace:nth-of-type(3){
+  text-align: right;
+}
+
+/*********ACABAN********/
+/*    ESTILOS FOOTER   */
+/***********************/
