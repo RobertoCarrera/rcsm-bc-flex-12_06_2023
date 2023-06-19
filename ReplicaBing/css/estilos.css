@@ -15,15 +15,15 @@ body{
 /*  ESTILOS GENERALES  */
 /***********************/
 
-/*******EMPIEZAN********/
-/*CONTAINERES GENERALES*/
+/***EMPIEZAN ESTILOS***/
+/*CONTAINERES GENERALES*
 /***********************/
 
 
 #barra-superior{
   height: 5vh;
   display: flex;
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 9%, rgba(0,0,0,0.7567401960784313) 90%);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 9%, rgba(0,0,0,0.45) 90%);
 }
 
 #barra-busqueda{
@@ -47,6 +47,7 @@ body{
   align-items: center;
   color: white
 }
+
 /********ACABAN*********/
 /*CONTAINERS GENERALES */
 /***********************/
@@ -316,7 +317,7 @@ body{
   align-items: center;
 }
 
-#botones-derecha .material-symbols-outlined:nth-child(2), .material-symbols-outlined:nth-child(3){
+#botones-derecha .material-symbols-outlined:nth-child(2), #botones-derecha .material-symbols-outlined:nth-child(3){
   background-color: rgba(0, 0, 0, 0.514);
   border-radius: 5px;
   padding: 0.5em;
