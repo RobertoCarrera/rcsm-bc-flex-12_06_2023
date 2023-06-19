@@ -1,37 +1,38 @@
 
-/*******EMPIEZAN********/
-/*  ESTILOS GENERALES  */
-/***********************/
+                    /*******EMPIEZAN********/
+                    /*  ESTILOS GENERALES  */
+                    /***********************/
 
 body{
   margin: 0;
 }
 
 a{
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 a:hover{
   text-decoration: underline;
 }
 
-/*******ACABAN********/
-/*  ESTILOS GENERALES  */
-/***********************/
+                    /*******ACABAN********/
+                    /*  ESTILOS GENERALES  */
+                    /***********************/
 
-/*******EMPIEZAN********/
-/*CONTAINERES GENERALES*/
-/***********************/
+                    /*******EMPIEZAN********/
+                    /*CONTAINERES GENERALES*/
+                    /***********************/
 
 #container{
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 }
 
-#barra-herramientas{
-  display: flex;
+#barra-superior{
   height: 5vh;
+
+  display: flex;
 }
 
 #contenido{
@@ -39,21 +40,38 @@ a:hover{
 }
 
 #footer{
-  color: gray;
   height: 10vh;
+  
+  color: gray;
   background-color: rgba(190, 190, 190, 0.24);
 }
 
-/********ACABAN*********/
-/*CONTAINERS GENERALES */
-/***********************/
+                    /********ACABAN*********/
+                    /*CONTAINERS GENERALES */
+                    /***********************/
 
-/*******EMPIEZAN********/
-/*ESTILOS HERRAMIENTAS */
-/***********************/
+                    /*******EMPIEZAN********/
+                    /*ESTILOS BARRA-SUPERIOR */
+                    /***********************/
+
+#herramientas-izquierda-container{
+  width: 50vw;
+
+  padding: 2em 1em;
+
+  display: flex;
+  align-items: center;
+}
+
+
+#herramientas-izquierda-container a{
+margin: 10px;
+}
 
 #herramientas-derecha-container{
   width: 50vw;
+  padding: 0.5em 1em;
+
   text-align: right;
 }
 
@@ -61,34 +79,26 @@ a:hover{
   margin: 10px;
 }
 
+/* #1 Y aquí le damos el formato flex para que se distribuya*/
 #herramientas-derecha{
   display: flex;
   align-items: center;
   justify-content: end;
 }
-#herramientas-izquierda-container{
-    display: flex;
-    align-items: center;
-    width: 50vw;
-  }
-  
-
-#herramientas-izquierda-container a{
-  margin: 10px;
-}
-
 
 #herramientas-derecha img{
   border-radius: 50px;
 }
 
-/*******ACABAN********/
-/*ESTILOS HERRAMIENTAS */
-/***********************/
+                    /*******ACABAN********/
+                    /*ESTILOS BARRA-SUPERIOR */
+                    /***********************/
 
-/*******EMPIEZAN********/
-/*  ESTILOS CONTENIDO  */
-/***********************/
+                    /*******EMPIEZAN********/
+                    /*  ESTILOS CONTENIDO  */
+                    /***********************/
+
+/* EMPIEZAN ESTILOS IMAGEN */
 
 #imagen{
   text-align: center;
@@ -98,59 +108,87 @@ a:hover{
   color: skyblue;
 }
 
+/* EMPIEZAN ESTILOS BUSQUEDA */
+
+/* Container que engloba todo */
 #busqueda{
-  border: 1px solid rgba(128, 128, 128, 0.3);
-  max-width: 30%;
-  margin: 20px auto;
-  border-radius: 50px;
+  width: 30%;
   height: 40px;
+  
+  margin: 20px auto;
+  padding: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 50px;
+
   display: flex;
   align-items: center;
-  padding: 5px;
+  justify-content: space-between;
 }
 
+/* Añadimos el efecto que hacer al pasar por encima del container de búsqueda */
+#busqueda:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+}
+
+/* Container dentro de busqueda posicionado a la izquierda */
 #busqueda-izquierda{
   width: 5%;
+}
+
+/* Container dentro de busqueda posicionado en el centro */
+#busqueda-centro{
+  width: 75%;
+  height: 80%;
+}
+
+/* Container dentro de busqueda posicionado a la derecha */
+#busqueda-derecha{
+  width: 15%;
+
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-#caja-buscar{
-  width: 80%;
-  text-align: center;
-}
-
-#caja-buscar input{
+/* Estilos atribuidos al contenido del container centro */
+#busqueda-centro input{
   height: 100%;
   width: 100%;
+
   border: none;
 }
 
-#busqueda-derecha{
-  width: 15%;
-  text-align: right;
-  align-items: center;
+#busqueda-centro input:focus{
+  outline: none;
 }
 
 #busqueda span{
   margin: 8px;
 }
 
+/* EMPIEZAN ESTILOS BOTONES */
+
 #botones{
-  text-align: center;
   margin: 20px;
+
+  text-align: center;
 }
 
 #botones button{
-  border-radius: 5px;
-  border: none;
   margin: 5px;
   padding: 10px;
+
+  border-radius: 5px;
+  border: none;
+
   background-color: rgba(219, 219, 219, 0.212);
 }
 
 #botones button:hover{
   box-shadow: 0 0 3px 0 gray;
 }
+
+/* EMPIEZAN ESTILOS IDIOMAS */
 
 #idiomas{
   text-align: center;
@@ -160,17 +198,19 @@ a:hover{
   color: rgb(17, 17, 202);
 }
 
-/*********ACABAN********/
-/*  ESTILOS CONTENIDO  */
-/***********************/
+                    /*********ACABAN********/
+                    /*  ESTILOS CONTENIDO  */
+                    /***********************/
 
-/*******EMPIEZAN********/
-/*    ESTILOS FOOTER   */
-/***********************/
+                  /*******EMPIEZAN********/
+                  /*    ESTILOS FOOTER   */
+                  /***********************/
+
+/* Estilos generales */
 
 #footer a{
+  padding: 0.5em 1em 0.1em 1em;
   color: gray;
-  margin: 15px;
 }
 
 #footer p{
@@ -178,45 +218,50 @@ a:hover{
   font-size: 18px;
 }
 
+/* Containers dentro de footer */
+
 #pais{
   height: 5vh;
+
   display: flex;
   align-items: center;
 }
 
+/* La verdad, me falta el borde entre el div que hay arriba, #pais y el de abajo
+#enlaces-footer. Pero me generaba que aparecieran barras laterales y horizontales.
+Intenté poner un hr y no me funcionaba.*/
+
 #enlaces-footer{
-  display: flex;
   height: 5vh;
+  
+  display: flex;
   align-items: center;
 }
+
+/* Estilos dentro del container enlaces-footer */
 
 .enlace{
   width: 33vw;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
 }
 
-.enlace a{
-  align-items: center;
-}
-
+/* Estilos enlaces centro */
 .enlace:nth-of-type(2){
   text-align: center;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Estilos del icono de la hoja */
 .enlace:nth-of-type(2) .material-symbols-outlined{
   color: green;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
 }
 
+/* Estilos enlaces derecha */
 .enlace:nth-of-type(3){
   text-align: right;
 }
-
-/*********ACABAN********/
-/*    ESTILOS FOOTER   */
-/***********************/
+                    /*********ACABAN********/
+                    /*    ESTILOS FOOTER   */
+                    /***********************/
